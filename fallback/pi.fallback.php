@@ -48,6 +48,10 @@ class Fallback {
 	
 	public function options()
 	{
+		$option1 = $this->EE->TMPL->fetch_param('option1');
+		$option2 = $this->EE->TMPL->fetch_param('option2');
+		$option3 = $this->EE->TMPL->fetch_param('option3');				
+		
 		if ($option1 != "")
 		return $option1;
 		
