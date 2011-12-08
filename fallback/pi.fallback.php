@@ -46,6 +46,18 @@ class Fallback {
 		$this->EE =& get_instance();
 	}
 	
+	public function options()
+	{
+		if ($option1 != "")
+		return $option1;
+		
+		if ($option2 != "")
+		return $option2;
+		
+		if ($option3 != "")
+		return $option3;
+	}
+	
 	// ----------------------------------------------------------------
 	
 	/**
